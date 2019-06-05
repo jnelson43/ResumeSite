@@ -1,0 +1,128 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>James Nelson</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="../css/resumeSite.css">
+</head>
+
+<body>
+  <header>
+    <h2><a href="../index.html">James Nelson</a></h2>
+    <nav>
+      <li><a href="../html/developer.html">Developer</a></li>
+      <li><a href="../html/careerTimeline.html">Career Timeline</a></li>
+      <li><a href="../index.html#contact">Contact</a></li>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="background-image" style="background-image: url(../images/headerBG.jpg);"></div>
+    <div class="hero-content-area">
+      <h1>James Nelson</h1>
+      <h3 id='smallerh3'>If a web developer is what you need, then James Nelson is your best choice indeed!</h3>
+      <a href="#contact" class="btn">Hire Now</a>
+    </div>
+  </section>
+
+  <section class="chordsApp">
+    <h3 class="title">Chords Visualizer is Live!</h3>
+    <p>An application that I have designed from scratch to aid in the process of understanding chords on the guitar. This is a solo project of mine created using HTML/CSS, JS(Json,JQuery), and hosted using AWS.</p>
+    <hr>
+    <a href='http://www.chordsVisualizer.com/'><img align='center'src='../images/chordsApp.JPG' alt='Guitar Chords Application' height='75%' width='75%' id='chordsAppImage'><img align='center'src='../images/chordsAppMobile1.jpg' alt='Guitar Chords Application' height='75%' width='75%' id='chordsAppMobileImage'></a>
+  </section>
+
+  <section class="packages">
+    <h3 class="title">Qualifications & Interests</h3>
+    <p>My interest in programming started during my first programming course in high school and has continued through personal projects, my education at UNL/SCC, and numerous online courses.</p>
+    <hr>
+
+    <ul class="grid">
+      <li>
+        <i class="fa fa-graduation-cap fa-4x" aria-hidden="true"></i>
+        <h4>Education</h4>
+        <p>Graduated Southeast Highschool: 2014<br>
+           Attended UNL(Major:CompSci): 2014-2016<br>
+           Attending SCC(Major Web/AppDev) Expected Graduation: Early 2019<br>
+           Various Online Courses(Predominantly <a href= 'https://www.udemy.com/user/james-nelson-19/'>Udemy</a>): 2014 - Present
+           </p>
+      </li>
+      <li>
+        <i class="fa fa-laptop fa-4x"></i>
+        <h4>Proficiencies</h4>
+        <ul id='Proficiencies'>
+	<li><b>Object Oriented Programming</b>: Java, C#, and Javascript</li>
+	<li><b>Web Development Technologies</b>: HTML5/CSS3 standards, Javacript with frameworks like Bootstrap, JQuery, JSON, nodeJS, React, and D3. Modern CSS functionalities like flexbox, animations, responsive designs, and grid layout. Experience developing themes and managing wordpress sites using PHP. Web hosting through windows server and Amazon AWS. Lastly, Creating web forms with ASP.Net using C#.</li>
+	<li><b>Proficient with:</b>: PHP, Java, C#, ASP.Net, MySql, XML, HTML5, CSS3, JS + mentioned frameworks, and gulp.</li>
+	<li>Familiar with development approaches such as Agile and Scrum, Version control with Git, server management with MVS, productivity tools like gulp and windows powershell scripting, and working CMS’s, primarily wordpress.</li>
+	<li><b>IT</b>: Hardware installations and replacements, Operating system installations and repairs (Mac, Windows, or Linux), Active Directory/Group Policy, Office 365 including sharepoint administration, Powershell, VLANs, and firewall concepts.</li>
+	</ul>
+      </li>
+      <li>
+        <i class="fa fa-tasks fa-4x"></i>
+        <h4>Skill Set</h4>
+        <p>Eye for good design principles,<br>
+           Strong organizational skills,<br>
+           Clear and concise writing for documentation,<br>
+           I work effectively both independently or cooperatively,<br>
+           Detail oriented,<br>
+           Strong motivation and work ethic.</p>
+      </li>
+      <li>
+        <i class="fa fa-th-list fa-4x"></i>
+        <h4>What do I do?</h4>
+        <p>Create fun projects that improve my skillset,<br>
+           Write quality, easy to read code,<br>
+           Keep functions focused and leave quality documentation,<br>
+           Test my code for errors/inefficiencies, <br>
+           Keep up to date on best security practices, <br>
+           Never stop learning.<br>
+      </li>
+    </ul>
+  </section>
+
+  <section class="prevWork">
+    <h3 class="title">Previous Work</h3>
+    <hr>
+    <p class="position">Camera/3Play Operator & Producer, August 2015-March 2016</p>
+    <p class="employer">- Husker Vision</p>
+    <p class="position">Landscaper, May 2016 - July 2016</p>
+    <p class="employer">- Whirlwind</p>
+    <p class="position">Computer Technician, July 2016 - Present</p>
+    <p class="employer">- Level Seven Computers</p>
+    <p class="position">Social Media Manager, March 2019 - Present</p>
+    <p class="employer"> Heritage Highway 136</p>
+  </section>
+
+  <section class="contact" id='contact'>
+    <h3 class="title">Contact</h3>
+    <p>Feel free to send me an email at jnelson3465@gmail.com, or fill out the form bellow and press send.</a></p>
+    <hr>
+    <?=$thankYou ?>
+    <form action="contact.php" method="post">
+      <input type="email" placeholder="Email" name='email' required>
+      <input class="btn" type='submit' tabindex="1" value='Send'>
+      <textarea type='text' name='message' required></textarea>
+    </form>
+  </section>
+
+  <footer>
+    <p>Hosting made possible by <a href="https://aws.amazon.com/">AWS</a>.</p>
+    <p>Created by James Nelson</p>
+    <ul>
+      <li><a target='_blank' href="https://www.instagram.com/jamisontnelson/?hl=en"><i class="fa fa-instagram fa-2x"></i></a></li>
+      <li><a target='_blank' href="https://www.facebook.com/profile.php?id=100000239176671"><i class="fa fa-facebook-square fa-2x"></i></a></li>
+    </ul>
+        <nav>
+      <li><a href="/html/developer.html">Developer</a></li>
+      <li><a href="/html/careerTimeline.html">Career Timeline</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </nav>
+  </footer>
+</body>
+</html>
